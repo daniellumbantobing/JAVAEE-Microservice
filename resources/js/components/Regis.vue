@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+    <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -84,9 +84,12 @@ export default {
                 roleId:this.user.roleId
 
             })
+            
             .then(response => {
-                this.resetForm();
-                $("#modal-form").modal("hide");
+            //    this.$router.push("/masuk");
+               this.resetForm();
+                alert('berhasil Register');
+         
             })
 
         },

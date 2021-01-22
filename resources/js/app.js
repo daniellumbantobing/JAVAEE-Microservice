@@ -14,8 +14,9 @@ Vue.use(VueRouter)
 
 import Regis from './components/Regis'
 import Pulsa from './components/Pulsa'
-
-
+import Login from './components/Login'
+import Home from './components/Home'
+import Admin from './components/Admin'
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('pulsa-component', require('./components/Pulsa.vue').default);
 //Vue.component('regis-component', require('./components/Regis.vue').default);
@@ -32,6 +33,21 @@ const router = new VueRouter({
             name: 'pulsa',
             component: Pulsa
           
+        },
+        {
+          path: '/masuk',
+          name:'login',
+          component: Login
+        },
+        {
+          path:'/index',
+          name:'home',
+          component: Home
+        },
+        {
+          path:'/dashboard',
+          name:'home',
+          component: Admin
         }
     ]
   })

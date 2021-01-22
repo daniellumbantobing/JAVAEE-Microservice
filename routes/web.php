@@ -19,8 +19,10 @@ Route::get('/', function () {
 Route::get('/index',function(){
     return view('admin.home');
 });
+Route::get('/dashboard','UserController@home');
 
-
+Route::get('/index','UserController@index');
 Route::get('/daftar', 'RegisterController@register');
+Route::get('/masuk','LoginController@login');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
